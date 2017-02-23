@@ -1,0 +1,15 @@
+﻿@model HelloMVC.Models.CalculatorModels
+@{
+    ViewBag.Title = "Sum";
+}
+
+<h2>Sum</h2>
+<form action="/Calculator/Sum">
+    <input name="a" value="@Model.a"/>
+    +
+    <input name="b" value="@Model.b"/>
+    <input type="submit" value="Sum" />
+    <input value="@Model.s"/>
+</form>
+
+
